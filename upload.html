@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Policy Management</title>
+    <title>Policy Archive</title>
     <link rel="icon" href="assets/images/logoicon.png" type="image/x-icon">
 
     <!-- Global stylesheets -->
@@ -45,6 +45,9 @@
     <script src="assets/js/plugins/uploaders/plupload/plupload.queue.min.js"></script>
     <script src="assets/js/demo_pages/uploader_plupload.js"></script>
 
+    <script src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="assets/js/demo_pages/form_inputs.js"></script>
+
     <script src="assets/js/app.js"></script>
     <script src="assets/js/demo_pages/dashboard.js"></script>
     <script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
@@ -65,7 +68,7 @@
     <div class="navbar navbar-dark navbar-expand-xl mb-2">
         <div class="navbar-brand">
             <a href="index.html" class="d-inline-block">
-                <h1 class="text-white">Policy Management</h1>
+                <h1 class="text-white">Policy Archive</h1>
             </a>
         </div>
 
@@ -139,12 +142,29 @@
                             </div>
 
                             <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">Category:</label>
+                                <div class="col-lg-9">
+                                    <select class="form-control form-control-uniform" data-fouc="">
+                                        <option value="opt1">Select Category</option>
+                                        <option value="opt2">Category 1</option>
+                                        <option value="opt2">Category 2</option>
+                                        <option value="opt3">Category 3</option>
+                                        <option value="opt4">Category 4</option>
+                                        <option value="opt5">Category 5</option>
+                                        <option value="opt6">Category 6</option>
+                                        <option value="opt7">Category 7</option>
+                                        <option value="opt8">Category 8</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
                                 <label class="col-lg-3 col-form-label">Description:</label>
                                 <div class="col-lg-9">
                                     <textarea rows="5" cols="5" class="form-control mb-3"
                                         placeholder="Enter your message here"></textarea>
                                     <span class="mr-3"><input type="checkbox"> Amendment</span>
-                                    <span><input type="checkbox"> New</span>
                                 </div>
                             </div>
 
