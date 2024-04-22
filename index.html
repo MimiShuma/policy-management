@@ -45,6 +45,9 @@
     <script src="assets/js/plugins/uploaders/plupload/plupload.queue.min.js"></script>
     <script src="assets/js/demo_pages/uploader_plupload.js"></script>
 
+    <script src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="assets/js/demo_pages/form_inputs.js"></script>
+
     <script src="assets/js/app.js"></script>
     <script src="assets/js/demo_pages/dashboard.js"></script>
     <script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
@@ -65,7 +68,7 @@
     <div class="navbar navbar-dark navbar-expand-xl mb-2">
         <div class="navbar-brand">
             <a href="index.html" class="d-inline-block">
-                <h1 class="text-white">Policy Archive</h1>
+                <h1 class="text-white">Logistics Policy</h1>
             </a>
         </div>
 
@@ -112,89 +115,28 @@
         <div class="row">
             <div class="col-3 my-auto pl-5">
                 <div class="float-left">
-                    <div class="my-1">
-                        <label><span class="font-weight-bold">Category:</span>
-                        </label>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="">
-                                    <a data-toggle="collapse" class="collapsed" style="font-size: 10px; color: black;"
-                                        href="#accordion-control-group1" aria-expanded="false"><i
-                                            class="far fa-minus-square mr-1 fa-sm"></i><input type="checkbox"
-                                            checked>V&A</a>
-                                    <div id="accordion-control-group1" class="collapse">
-                                        <div class="ml-2">
-                                            <a class="collapsed text-default" data-toggle="collapse"
-                                                href="#accordion-control-group2"
-                                                style="font-size: 10px; color: black;"><i
-                                                    class="far fa-minus-square mr-1 fa-sm"></i><input type="checkbox"
-                                                    checked>Sub-category
-                                                #1</a><br>
-                                            <div class="ml-2">
-                                                <div id="accordion-control-group2" class="collapse">
-                                                    <a class="collapsed text-default" data-toggle="collapse"
-                                                        href="#accordion-control-group3"
-                                                        style="font-size: 10px; color: black;"><i
-                                                            class="far fa-minus-square mr-1 fa-sm"></i><input
-                                                            type="checkbox">Sub-subcategory
-                                                        #1</a>
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <a class="collapsed text-default" data-toggle="collapse"
-                                                    style="font-size: 10px; color: black;"><i
-                                                        class="far fa-minus-square mr-1 fa-sm"></i><input
-                                                        type="checkbox" checked>Sub-category
-                                                    #2</a><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="">
-                                    <a data-toggle="collapse" class="text-default collapsed"
-                                        href="#accordion-control-group4" aria-expanded="false"
-                                        style="font-size: 10px; color: black;"><i
-                                            class="far fa-minus-square mr-1 fa-sm"></i><input
-                                            type="checkbox">Clothing</a>
-                                    <div id="accordion-control-group4" class="collapse">
-                                        <div class="ml-2">
-                                            <a class="collapsed text-default" data-toggle="collapse"
-                                                style="font-size: 10px; color: black;"><i
-                                                    class="far fa-minus-square mr-1 fa-sm"></i><input
-                                                    type="checkbox">Sub-category
-                                                #1</a><br>
-                                            <div class="">
-                                                <a class="collapsed text-default" data-toggle="collapse"
-                                                    style="font-size: 10px; color: black;"><i
-                                                        class="far fa-minus-square mr-1 fa-sm"></i><input
-                                                        type="checkbox">Sub-category
-                                                    #2</a><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="">
-                                    <a data-toggle="collapse" class="text-default collapsed"
-                                        href="#accordion-control-group5" aria-expanded="false"
-                                        style="font-size: 10px; color: black;"><i
-                                            class="far fa-minus-square mr-1 fa-sm"></i><input type="checkbox">Fuel</a>
-                                    <div id="accordion-control-group5" class="collapse">
-                                        <div class="ml-2">
-                                            <a class="collapsed text-default" data-toggle="collapse"
-                                                href="#accordion-control-group2"
-                                                style="font-size: 10px; color: black;"><i
-                                                    class="far fa-minus-square mr-1 fa-sm"></i><input
-                                                    type="checkbox">Sub-category
-                                                #1</a><br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="my-2">
+                        <form action="">
+                            <label><span class="font-weight-bold">Group of Policies</span>
+                            </label><select class="form-control form-control-sm">
+                                <option value="opt1">Select Group of Policies</option>
+                                <option value="opt2">Clothing & V&A</option>
+                                <option value="opt2">Barrek</option>
+                                <option value="opt3">Aircraft</option>
+                                <option value="opt4">POL</option>
+                                <option value="opt5">Transportation</option>
+                                <option value="opt6">Local Purchase</option>
+                                <option value="opt7">Dress</option>
+                                <option value="opt8">Technical</option>
+                                <option value="opt9">Salvage & Auction</option>
+                                <option value="opt10">Insurance</option>
+                                <option value="opt11">Repair</option>
+                                <option value="opt12">Supply Admin</option>
+                                <option value="opt13">Centmet Mgt</option>
+                                <option value="opt14">Publication Forms & Stationary</option>
+                            </select>
+                        </form>
+
                     </div>
                     <div>
                         <label>
@@ -208,8 +150,8 @@
             <div class="col-9 pr-5">
                 <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer w-100">
                     <div class="datatable-header">
-                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label><span>Title:</span> <input
-                                    type="search" class="" placeholder="Type to filter..."
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label><span>Subject:</span>
+                                <input type="search" class="" placeholder="Type to filter..."
                                     aria-controls="DataTables_Table_0"></label></div>
                         <div id="DataTables_Table_0_filter" class="dataTables_filter mr-3"><label><span>Reference
                                     Keyword:</span>
@@ -224,12 +166,13 @@
                                 <tr role="row">
                                     <th tabindex="0" rowspan="1" style="width: 20px;">SL</th>
                                     <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                        aria-label="Job Title: activate to sort column ascending">Title</th>
+                                        aria-label="Job Title: activate to sort column ascending">Subject</th>
                                     <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                                         aria-label="DOB: activate to sort column ascending">Date</th>
                                     <th tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                                         aria-label="Status: activate to sort column ascending">Status</th>
-                                    <th rowspan="1" colspan="1" aria-label="Actions" style="width: 150px;">Category</th>
+                                    <th rowspan="1" colspan="1" aria-label="Actions" style="width: 150px;">Group of
+                                        Policies</th>
                                     <th rowspan="1" colspan="1" aria-label="Actions" style="width: 100px;">Action</th>
                                 </tr>
                             </thead>
